@@ -16,12 +16,11 @@ int main()
         position = i;
         for(j = i+1; j < no_of_elements; j++){
             if(elements[position] > elements[j]){
-                    position = j;}
-            if(position != i){
-                temp = elements[i];
-                elements[i] = elements[position];
-                elements[position] = temp;}
-        }
+                    position = j;}}
+        if(position != i){
+            temp = elements[i];
+            elements[i] = elements[position];
+            elements[position] = temp;}
     }
 	// printing the array elements
     for(i = 0; i < no_of_elements; i++){
