@@ -6,7 +6,7 @@ int main()
     int elements[100], temp, no_of_elements, i, j, position;
     printf("Enter the number of elements to be sorted: ");
     scanf("%d", &no_of_elements);
-    // taking the input of array elements
+    // taking the array elements as input
     for(i = 0; i < no_of_elements; i++){
             printf("Enter element %d: ", i+1);
             scanf("%d", &elements[i]);
@@ -22,7 +22,7 @@ int main()
             elements[i] = elements[position];
             elements[position] = temp;}
     }
-	// printing the array elements
+	// printing the sorted array elements
     for(i = 0; i < no_of_elements; i++){
         printf("%d\n", elements[i]);}
     return 0;
